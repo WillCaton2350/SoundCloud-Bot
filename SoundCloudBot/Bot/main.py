@@ -76,24 +76,21 @@ class web_driver:
             print(err)
 
     def auto_play(self):
-        number = 1
-        while number <= 10:
-            try:
-                WDW(
-                    self.driver,10).until(
-                        EC.presence_of_element_located((
-                            By.XPATH,
-                    first_autoplay_btn_xpath
-                )))
-            except NoSuchElementException as err:
-                print(err)
-            self.driver.find_element(
-                By.XPATH,
-            first_autoplay_btn_xpath).click()
-            print("song playing")
-            sleep(5)
-            number +=1
-            break
+        try:
+            WDW(
+                self.driver,10).until(
+                    EC.presence_of_element_located((
+                        By.XPATH,
+                first_autoplay_btn_xpath
+            )))
+        except NoSuchElementException as err:
+            print(err)
+        self.driver.find_element(
+            By.XPATH,
+        first_autoplay_btn_xpath).click()
+        print("song playing")
+        sleep(5)
+
 
 
     def close_browser(self):
