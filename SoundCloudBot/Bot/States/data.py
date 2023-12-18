@@ -1,5 +1,6 @@
 gecko_driver_path = '/Users/administrator/Desktop/Projects/SeleniumProjects/SoundCloudBot/Driver/geckodriver'
 url = 'https://soundcloud.com/'
+specific_url = 'https://soundcloud.com/willcatonjr/what-you-doing-tonight-ft-kurtiz-the-kid'
 login_btn_xpath = '/html/body/div[2]/div[2]/div[2]/div/div/div[1]/div/div[2]/button[1]'
 user_xpath = '//*[@id="sign_in_up_email"]'
 search_class = 'headerSearch__input'
@@ -9,3 +10,4 @@ first_autoplay_btn_xpath = '/html/body/div[2]/div[2]/div[2]/div/div[4]/div[1]/di
 artist_xpath = '/html/body/div[2]/div[2]/div[2]/div/div/div[3]/div/div/div/ul/li[1]/div/div/div/h2/a'
 auto_play_btn = '/html/body/div[2]/div[2]/div[2]/div/div/div[3]/div/div/div/ul/li[2]/div/div/div/div[2]/div[1]/div/div/div[1]/a'
 search_bar_xpath = '/html/body/div[3]/div[2]/div[2]/div/div/div[2]/div/div[1]/span/span/form/input'
+target_autoplay_xpath = '/html/body/div[2]/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[1]/a'

@@ -7,4 +7,18 @@
 
 - Possibly run these bots from a virtual machine like virtual box
 
-- Currently spins up a new browser instance to play the song as separate users- 
+- Currently spins up a new browser instance to play the song as separate users
+
+{$NOTES}
+
+Music Marketing Company
+
+BandLab - Engagement Bot
+
+Soundcloud - Autoplay Bot
+
+Put the band lab and Soundcloud bots in separate virtual machines 
+Log into virtual machine on linux. Make an automated pipeline with something like OSA script to automate the opening of VirtualBox, signing in, choosing the correct Ubuntu VM, then activating the script from the linux gnome terminal and repeating the activation of the script on schedule. Something like Jenkins or Docker. Might need to get into Containerization for deployment/semi-deployment?
+Have the instagram bot run on schedule inside of another linux VM and have it run/market the overall company’s instagram page.
+
++ Try to spin up multiple browser instances for each bandlab root.py file the same way the Soundcloud bot does.

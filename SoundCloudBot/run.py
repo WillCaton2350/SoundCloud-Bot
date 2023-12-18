@@ -1,4 +1,4 @@
-from Bot.main import web_driver
+from Bot.src import web_driver
 from datetime import datetime
 
 if __name__ == "__main__":
@@ -9,8 +9,6 @@ if __name__ == "__main__":
     for i in range(counter):
         func.start_driver()
         func.start_browser()
-        func.search_bar()
-        func.artist()
         func.auto_play()
         elapsed_time = datetime.now() - start_time
         formatted_time = str(elapsed_time).split(".")[0]

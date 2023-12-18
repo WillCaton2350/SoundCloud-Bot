@@ -23,7 +23,7 @@ class web_driver:
         self.driver = web.Firefox(
             options=firefox_options        
         )
-        self.driver.maximize_window()
+        self.driver.minimize_window()
 
     def start_browser(self):
         self.driver.get(url)
@@ -89,9 +89,7 @@ class web_driver:
             By.XPATH,
         first_autoplay_btn_xpath).click()
         print("song playing")
-        sleep(5)
-
-
+        sleep(3)
 
     def close_browser(self):
         self.driver.close()
