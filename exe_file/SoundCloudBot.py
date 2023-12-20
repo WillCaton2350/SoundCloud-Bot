@@ -175,7 +175,7 @@ class SimpleGUI(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    selenium_script_path = "path_to_your_selenium_script.py"
+    selenium_script_path = "soundcloudbot.py"
     window = SimpleGUI(selenium_script_path)
     window.show()
     sys.exit(app.exec())
